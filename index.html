@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আল-কুরআন ই-বুক | Al-Quran eBook - Official App Website</title>
+  <meta name="description" content="পবিত্র কুরআনুল কারীম — ১-৩০ পারা, ১১৪ সূরা, পৃষ্ঠা ভিত্তিক মুসহাফ ও শব্দে শব্দে অডিও তিলাওয়াতসহ আল-কুরআন ই-বুক।">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #047857;
+      --primary-light: #10b981;
+      --accent: #d97706;
+      --dark: #0f172a;
+      --dark-card: #1e293b;
+      --light-bg: #f8fafc;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Hind Siliguri', 'Outfit', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 850px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Hero Card */
+    .hero-card {
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 28px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .app-icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 24px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      margin-bottom: 16px;
+      border: 2px solid rgba(217, 119, 6, 0.5);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #f8fafc;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: #94a3b8;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    /* Play Store Button */
+    .btn-playstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #ffffff;
+      color: #0f172a;
+      padding: 14px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: all 0.25s ease;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-playstore:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 30px rgba(16, 185, 129, 0.3);
+      background: #f1f5f9;
+    }
+
+    .btn-playstore svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .feature-item {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .feature-item h3 {
+      font-size: 1.15rem;
+      color: #34d399;
+      margin-bottom: 6px;
+    }
+
+    .feature-item p {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+
+    /* Policy & Footer */
+    .card-section {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .card-section h2 {
+      font-size: 1.4rem;
+      color: #fbbf24;
+      margin-bottom: 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 8px;
+    }
+
+    .card-section p, .card-section li {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      line-height: 1.7;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #34d399;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Hero Section -->
+    <div class="hero-card">
+      <img src="https://play-lh.googleusercontent.com/com.alquranbook.al_quran_book" alt="Al-Quran eBook" class="app-icon" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3233/3233508.png'">
+      <h1>আল-কুরআন ই-বুক</h1>
+      <p style="color: #fbbf24; font-weight: 600; margin-bottom: 12px;">Al-Quran eBook with Bangla Translation & Audio</p>
+      <p class="subtitle">
+        পবিত্র কুরআনুল কারীম পড়ার এক অনন্য অভিজ্ঞতা। সম্পূর্ণ ১১৪ সূরা, ৩০ পারা, ১-৬০৪ পৃষ্ঠার পূর্ণাঙ্গ মুসহাফ এবং শব্দে শব্দে স্পষ্ট অডিও তিলাওয়াতসহ সম্পূর্ণ বিজ্ঞাপনবান্ধব ইসলামিক অ্যাপ।
+      </p>
+
+      <a href="https://play.google.com/store/apps/details?id=com.alquranbook.al_quran_book" class="btn-playstore" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24">
+          <path fill="#4285F4" d="M3.6 2.5C3.3 2.8 3 3.4 3 4.2v15.6c0 .8.3 1.4.6 1.7L12 13.1 3.6 2.5z"/>
+          <path fill="#FBBC04" d="M15.4 16.5l-3.4-3.4 3.4-3.4 3.8 2.2c1.1.6 1.1 1.7 0 2.4l-3.8 2.2z"/>
+          <path fill="#EA4335" d="M12 13.1L3.6 21.5c.5.5 1.3.6 2 .2l9.8-5.6-3.4-3z"/>
+          <path fill="#34A853" d="M12 13.1l3.4-3.4L5.6 4.1c-.7-.4-1.5-.3-2 .2L12 13.1z"/>
+        </svg>
+        Download on Google Play
+      </a>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-grid">
+      <div class="feature-item">
+        <h3>📖 ১১৪ সূরা ও ৩০ পারা</h3>
+        <p>সহজ ও প্রাঞ্জল বাংলা অনুবাদসহ যেকোনো সূরা ও পারায় দ্রুত যাওয়ার সুব্যবস্থা।</p>
+      </div>
+      <div class="feature-item">
+        <h3>📜 ১-৬০৪ পৃষ্ঠাভিত্তিক মুসহাফ</h3>
+        <p>আসল মুদ্রিত কুরআনের মতো পেজ বাই পেজ পড়ার নিখুঁত অনুভূতি।</p>
+      </div>
+      <div class="feature-item">
+        <h3>🎧 শব্দে শব্দে অডিও তিলাওয়াত</h3>
+        <p>তিলাওয়াত চলাকালীন রিয়েল-টাইম আয়াত ও ওয়ার্ড হাইলাইটিংসহ ব্যাকগ্রাউন্ড প্লে।</p>
+      </div>
+      <div class="feature-item">
+        <h3>🌓 আধুনিক Light ও Dark মোড</h3>
+        <p>দিন বা রাতে পড়ার জন্য চোখের আরামদায়ক থিম এবং ফন্ট সাইজ নিয়ন্ত্রণ।</p>
+      </div>
+    </div>
+
+    <!-- Official Privacy Policy Section -->
+    <div class="card-section" id="privacy-policy">
+      <h2>Privacy Policy for Al-Quran eBook</h2>
+      <p><strong>Last updated:</strong> September 29, 2026</p>
+      <p style="margin-top: 10px;">
+        <strong>MD. TAHMID SHAH TAMIM</strong> ("we", "us", or "our") built the <strong>Al-Quran eBook</strong> app as a Free, ad-supported app. This SERVICE is provided at no cost and is intended for use as is.
+      </p>
+      <p>
+        This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
+      </p>
+
+      <h3 style="color: #34d399; margin-top: 18px; margin-bottom: 6px; font-size: 1.15rem;">1. Information Collection and Use</h3>
+      <p>
+        <strong>We do not collect, store, or transmit any of your personal information (such as your name, email address, phone number, or location) to our servers.</strong>
+      </p>
+      <p>
+        The app only saves your app preferences, last read Surah, last read Juz, and page bookmarks locally on your device's internal storage using <code>SharedPreferences</code>. This data never leaves your device.
+      </p>
+
+      <h3 style="color: #34d399; margin-top: 18px; margin-bottom: 6px; font-size: 1.15rem;">2. Foreground Services (Media Playback)</h3>
+      <p>
+        The app uses a Foreground Service with media playback permissions to allow you to listen to Quranic audio recitations continuously while the app is in the background or your device screen is locked. This service strictly plays audio over the internet. <strong>It does not record audio from your microphone or collect any personal data.</strong>
+      </p>
+
+      <h3 style="color: #34d399; margin-top: 18px; margin-bottom: 6px; font-size: 1.15rem;">3. Third-Party Services (Google AdMob)</h3>
+      <p>
+        The app uses third-party services that may collect information used to identify you for the purpose of serving personalized advertisements. We use <strong>Google AdMob</strong> to display ads. Google, as a third-party vendor, uses cookies or unique device identifiers to serve ads based on your previous visits to this app or other websites.
+      </p>
+
+      <h3 style="color: #34d399; margin-top: 18px; margin-bottom: 6px; font-size: 1.15rem;">4. Internet Access</h3>
+      <p>
+        The app requires an internet connection to fetch and play Quranic audio files and to serve advertisements via Google AdMob.
+      </p>
+
+      <h3 style="color: #34d399; margin-top: 18px; margin-bottom: 6px; font-size: 1.15rem;">5. Children's Privacy</h3>
+      <p>
+        These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.
+      </p>
+
+      <h3 style="color: #34d399; margin-top: 18px; margin-bottom: 6px; font-size: 1.15rem;">6. Changes to This Privacy Policy</h3>
+      <p>
+        We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes.
+      </p>
+
+      <h3 style="color: #34d399; margin-top: 18px; margin-bottom: 6px; font-size: 1.15rem;">7. Contact Us</h3>
+      <p>
+        If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at: <a href="mailto:tahmidshahtamim@gmail.com" style="color: #fbbf24; font-weight: 600;">tahmidshahtamim@gmail.com</a>
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 <strong>Al-Quran eBook</strong> • Developed by <strong>MD. TAHMID SHAH TAMIM</strong></p>
+      <p style="margin-top: 6px;"><a href="app-ads.txt" target="_blank">app-ads.txt</a> • <a href="https://play.google.com/store/apps/details?id=com.alquranbook.al_quran_book" target="_blank">Google Play Store</a></p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
